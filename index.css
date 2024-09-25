@@ -13,7 +13,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    
 }
 
 #navBar-child:hover {
@@ -23,6 +23,11 @@ body {
 #starbucksLogo {
     padding-left: 20px;
     margin-right: 1000px;
+}
+
+.logoSize {
+    width: 75px;
+    height: auto;
 }
 
 #navBar-child {
@@ -92,23 +97,23 @@ body {
 }
 
 .icon {
-    /* display: block;
-    color: white;
+    display: block;
+   /* color: white;
     padding: 14px 20px;
     cursor: pointer; */
     display: none;
 }
 
-.navbar-scrolled {
+/* .navbar-scrolled {
     background-color: rgb(174, 169, 169);
     box-shadow: 0px 3px 10px rgb(169, 169, 169, 0.15) ;
     border-radius: 20px;
-}
+} */
 
 #body-parent {
     display: flex;
     flex-direction: row;
-    padding: 100px 150px 0px 150px;
+    padding: 10px 150px 0px 150px;
 }
 
 #body-child1 h2 {
@@ -188,6 +193,16 @@ body {
     height: auto;
 }
 
+#backToTop {
+    /* display: none; */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
 @media (max-width: 767px) {
     body {
         min-width: 100vw;
@@ -221,8 +236,13 @@ body {
     }
 
     #starbucksLogo {
-        padding-left: 20px;
-        margin-right: 100px;
+        /* padding-left: 20px; */
+        margin-right: 150px;
+    }
+
+    .logoSize {
+        width: 60px;
+        height: auto;
     }
 
     .navbar a {
@@ -256,7 +276,7 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 100px 10px;
+        padding: 10px 10px;
 
     }
     
@@ -313,6 +333,17 @@ body {
         margin-top: 50px;
         margin-left: 10px;
     }
+
+    #backToTop {
+        /* display: none; */
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        cursor: pointer;
+        padding: 5px 8px;
+        border-radius: 8px;
+        opacity: 0.7;
+    }
 }
 
 @media (min-width: 768px) and 
@@ -333,8 +364,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
-
+    padding-top: 10px;
 }
 
 #drinksParent {
@@ -400,8 +430,43 @@ body {
 /* Sign In Form */
 
 #signInPage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(204, 197, 197);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* z-index: 10; */
+    z-index: 999;
+    text-align: center;
+}
+
+#formPage {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 20px;
+}
+
+#inputDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#usernameBox {
+    width: 250px;
+    height: 25px;
+    border-radius: 15px;
+
+}
+
+@media (max-width: 768px) {
+    #signInPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

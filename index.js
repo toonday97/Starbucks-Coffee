@@ -16,3 +16,31 @@ window.addEventListener('scroll', function() {
         navEl.classList.remove ('navbar-scrolled');
     }
 } )
+
+// Sign In Form
+
+const signInContainer = document.querySelector('#signInPage');
+
+// Example toggle function to hide the form
+function toggleSignInForm() {
+    signInContainer.style.display = (signInContainer.style.display === 'none') ? 'block' : 'none';
+}
+
+// Back To Top
+
+function scrollToTop () {
+    window.scrollTo ({ top: 0,
+        behavior: "smooth"
+    });
+};
+
+window.onscroll = function() {
+
+    let button = document.getElementById("backToTop");
+    
+    if (document.body.scrollTop >= 50 ) {
+            button.style.display = "block"; 
+        }  else if  (document.documentElement.scrollToTop > 50 ) {
+                button.style.display = "none";
+            }
+    };

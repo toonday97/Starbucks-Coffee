@@ -11,55 +11,20 @@
     <title>Starbucks Coffee</title>
 </head>
 <body>
-    
-     <!-- Navigation Bar     -->
-    <section>
-                   
-        <nav id="navBar-parent">
-            <div id="starbucksLogo">
-                <a href="#"><img src="images/logo.png" alt="logo"></a>
-            </div>
-                           
-                <div id="navBar-child" class="navbar">
-                    <a href="index.html">Home</a>
-                
-                    <a href="menu.html">Menu</a>
-                
-                    <a href="#">About</a>
-               
-                    <a href="#">Contact</a>
-                    
-                    <a href="signIn.html"> 
-                        <button type="button" id="navBar-signIn">Sign In</button>
-                    </a>
-
-                    <a href="">
-                        <button type="button" id="navBar-joinNow">Join Now</button>
-                    </a>
-                    
-            
-                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-                        &#9776; <!-- Hamburger icon -->
-                    </a>
-                </div> 
-                                   
-        </nav>
-        
-    </section>
 
 <!-- Sign In Form -->
 <section id="signInPage">
-    <form action="">
 
-        <div>
-            <label for="">Username</label>
-            <input type="text" name="" id="" placeholder="Enter Username">
+    <h1>Sign In</h1>
+    <form action="" id="formPage">
+
+        <div id="inputDetails">
+            <input type="text" name="" id="usernameBox" placeholder="Enter Username" required>
             
         </div>
     
-        <div>
-            <label for="">Password</label>
-            <input type="password" name="" id="" placeholder="Enter Password">
+        <div id="inputDetails">
+            <input type="password" name="" id="usernameBox" placeholder="Enter Password" required>
             
         </div>
     
@@ -67,7 +32,10 @@
             <button type="submit">Sign In</button>
         </div>
     </form>
+    <p>Not a member? <a href="">Join Now</a></p>
 </section>
+
+<script src="index.js"></script>
 
 </body>
 </html>
